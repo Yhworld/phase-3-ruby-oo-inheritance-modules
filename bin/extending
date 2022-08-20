@@ -3,5 +3,11 @@
 require_relative "../lib/kid"
 require_relative "../lib/dancer"
 
+class Dancer
+    extend MetaDancing
+  end
+  class Kid
+    extend MetaDancing
+  end
 puts Kid.metadata
 puts Dancer.metadata
